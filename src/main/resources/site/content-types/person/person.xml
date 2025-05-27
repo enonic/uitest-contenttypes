@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<content-type>
+  <display-name>Person</display-name>
+  <display-name-expression>${firstName}  ${lastName}</display-name-expression>
+<super-type>base:structured</super-type>
+  <form>
+    <input name="firstName" type="TextLine">
+      <label>First Name</label>
+    </input>
+    <input name="lastName" type="TextLine">
+      <label>Last Name</label>
+    </input>
+    <input name="city" type="TextLine">
+      <label>City</label>
+    </input>
+  </form>
+<config>
+    <list-title-expression>${data.firstName} ${data.lastName} from ${data.city}</list-title-expression>
+  </config>
+</content-type>

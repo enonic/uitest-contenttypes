@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page>
+  <display-name>Page</display-name>
+  <description>home page</description>
+  <form>
+    <input type="TextLine" name="title">
+      <label>Title</label>
+      <occurrences minimum="0" maximum="1"/>
+    </input>
+  </form>
+  <regions>
+    <region name="main"/>
+  </regions>
+</page>

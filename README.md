@@ -1,4 +1,4 @@
-# Application that contains content types for ui-testing for Enonic XP
+# Application that contains content types for ui-testing for Content Studio
 
 To build the application:
 

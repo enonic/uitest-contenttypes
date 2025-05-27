@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<content-type xmlns="urn:enonic:xp:model:1.0">
+  <display-name>optionset-single-selection</display-name>
+  <super-type>base:structured</super-type>
+  <form>
+    <option-set name="radioOptionSet">
+      <label>Single selection</label>
+      <expanded>true</expanded>
+      <help-text>Single selection radio option set</help-text>
+      <occurrences minimum="1" maximum="1"/>
+      <options minimum="1" maximum="1">
+        <option name="option_1">
+          <label>Option 1</label>
+          <help-text>Help text for Option 1</help-text>
+          <items>
+            <input name="name" type="TextLine">
+              <label>option-1-name</label>
+              <help-text>Text input</help-text>
+              <occurrences minimum="1" maximum="1"/>
+            </input>
+          </items>
+        </option>
+        <option name="option_2">
+          <label>Option 2</label>
+          <help-text>Help text for Option 2</help-text>
+          <items>
+            <input name="imageselector2" type="ImageSelector">
+              <label>option-2-image-selector</label>
+              <indexed>true</indexed>
+              <occurrences minimum="1" maximum="2"/>
+              <config/>
+            </input>
+          </items>
+        </option>
+      </options>
+    </option-set>
+
+  </form>
+</content-type>

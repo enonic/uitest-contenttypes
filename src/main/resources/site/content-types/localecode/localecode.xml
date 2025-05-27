@@ -1,0 +1,23 @@
+<content-type>
+  <display-name>Locale Code</display-name>
+  <super-type>base:structured</super-type>
+  <form>
+    <input type="TextLine" name="localeCode">
+      <label>Locales</label>
+      <occurrences minimum="1" maximum="1" />
+      <config>
+        <option value="en-US">English (United States)</option>
+        <option value="ar-EG">Arabic (Egypt)</option>
+      </config>
+    </input>
+
+    <input type="ComboBox" name="localeCode2">
+      <label>Locales</label>
+      <occurrences minimum="1" maximum="1" />
+      <config>
+        <option value="en-US">English (United States)</option>
+        <option value="ar-EG">Arabic (Egypt)</option>
+      </config>
+    </input>
+  </form>
+</content-type>

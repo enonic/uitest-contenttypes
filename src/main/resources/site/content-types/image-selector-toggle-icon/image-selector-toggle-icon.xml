@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<content-type>
+  <display-name>image-sel-toggle-hidden</display-name>
+  <super-type>base:structured</super-type>
+  <allow-child-content>true</allow-child-content>
+  <form>
+   <input name="imageSelectorTree-IconDisabled" type="ImageSelector">
+      <label>Tree mode, disable toggle icon</label>
+      <occurrences minimum="1" maximum="8"/>
+      <config>
+        <treeMode>true</treeMode>
+        <hideToggleIcon>true</hideToggleIcon>
+      </config>
+    </input>
+  </form>
+</content-type>

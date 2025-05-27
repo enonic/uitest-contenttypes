@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<x-data xmlns="urn:enonic:xp:model:1.0">
+  <display-name>Html Area x-data</display-name>
+  <form>
+    <input name="htmlarea_1_2" type="HtmlArea">
+      <help-text>html-area help text</help-text>
+      <label>HTML content 1:2</label>
+      <occurrences minimum="1" maximum="2"/>
+    </input>
+  </form>
+</x-data>

@@ -1,0 +1,19 @@
+<content-type xmlns="urn:enonic:xp:model:1.0">
+  <display-name>opt-set-unlim</display-name>
+  <description>This is a description</description>
+  <super-type>base:structured</super-type>
+  <form>
+    <option-set name="options">
+      <occurrences minimum="1" maximum="1"/>
+      <label>Option tests</label>
+      <options minimum="0" maximum="0">
+        <option name="a">
+          <label>A</label>
+        </option>
+        <option name="b">
+          <label>B</label>
+        </option>
+      </options>
+    </option-set>
+  </form>
+</content-type>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<content-type xmlns="urn:enonic:xp:model:1.0">
+  <display-name>content-selector1_2</display-name>
+  <super-type>base:structured</super-type>
+  <form>
+    <input name="cs1_2" type="ContentSelector">
+      <label>content selector 1:2</label>
+      <occurrences minimum="1" maximum="2"/>
+      <config>
+        <relationship>system:reference</relationship>
+        <allowPath>*</allowPath>       
+      </config>
+    </input>
+  </form>
+</content-type>
