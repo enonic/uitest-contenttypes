@@ -57,7 +57,7 @@
         <property-set name="data">
             <string isNull="true" name="description"/>
             <property-set name="siteConfig">
-                <string name="applicationKey">com.enonic.xp.ui_testing.contenttypes</string>
+                <string name="applicationKey">com.enonic.uitest.contenttypes</string>
                 <property-set name="config">
                     <string isNull="true" name="numPosts"/>
                     <string isNull="true" name="footerText"/>

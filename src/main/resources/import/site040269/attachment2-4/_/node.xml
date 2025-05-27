@@ -39,7 +39,7 @@
     <data>
         <boolean name="valid">true</boolean>
         <string name="displayName">attachment2-4</string>
-        <string name="type">com.enonic.xp.ui_testing.contenttypes:attachment2_4</string>
+        <string name="type">com.enonic.uitest.contenttypes:attachment2_4</string>
         <string name="owner">user:system:su</string>
         <dateTime name="modifiedTime">2023-12-07T05:48:05.818Z</dateTime>
         <string name="modifier">user:system:su</string>

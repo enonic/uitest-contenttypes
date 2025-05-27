@@ -16,7 +16,7 @@ import com.enonic.xp.schema.content.ContentTypeName;
 public class LocalCodeValidator
     implements ContentValidator
 {
-    private static final ApplicationKey APP_KEY = ApplicationKey.from( "com.enonic.xp.ui_testing.contenttypes" );
+    private static final ApplicationKey APP_KEY = ApplicationKey.from( "com.enonic.uitest.contenttypes" );
 
     private static final ContentTypeName SUPPORTED_TYPE = ContentTypeName.from( APP_KEY, "localecode" );
 
