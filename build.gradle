@@ -35,3 +35,9 @@ dependencies {
     include 'com.enonic.lib:lib-thymeleaf:2.2.0-SNAPSHOT'
     include 'com.enonic.lib:lib-mustache:2.1.1'
 }
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
