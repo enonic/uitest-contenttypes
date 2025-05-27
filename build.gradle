@@ -2,9 +2,15 @@ plugins {
     id 'maven-publish'
     id 'com.enonic.defaults' version '2.1.5'
     id 'com.enonic.xp.app' version '3.6.1'
-
 }
-version = '8.0.0'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    xp.enonicRepo('dev')
+}
+
+
 app {
     name = 'com.enonic.xp.ui_testing.contenttypes'
     displayName = 'All Content Types App'
@@ -19,29 +25,13 @@ dependencies {
     include "com.enonic.xp:lib-context:${xpVersion}"
     include "com.enonic.xp:lib-portal:${xpVersion}"
     include "com.enonic.xp:lib-i18n:${xpVersion}"
-    include "com.enonic.xp:lib-mail:${xpVersion}"
     include "com.enonic.xp:lib-io:${xpVersion}"
     include "com.enonic.xp:lib-repo:${xpVersion}"
     include "com.enonic.xp:lib-node:${xpVersion}"
     include "com.enonic.xp:lib-value:${xpVersion}"
-    include "com.enonic.xp:lib-scheduler:${xpVersion}"
-    include "com.enonic.xp:lib-task:${xpVersion}"
-    include "com.enonic.xp:lib-cluster:${xpVersion}"
-    include "com.enonic.xp:lib-auditlog:${xpVersion}"
     include "com.enonic.xp:lib-project:${xpVersion}"
     include "com.enonic.xp:lib-export:${xpVersion}"
     include "com.enonic.lib:lib-http-client:3.2.2"
     include 'com.enonic.lib:lib-thymeleaf:2.2.0-SNAPSHOT'
     include 'com.enonic.lib:lib-mustache:2.1.1'
-    include "com.enonic.lib:lib-text-encoding:2.1.1"
-
-
-
-}
-
-
-repositories {
-    mavenLocal()
-    mavenCentral()
-    xp.enonicRepo('dev')
 }
