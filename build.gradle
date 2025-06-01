@@ -10,7 +10,6 @@ repositories {
     xp.enonicRepo('dev')
 }
 
-
 app {
     name = 'com.enonic.uitest.contenttypes'
     displayName = 'All Content Types App'

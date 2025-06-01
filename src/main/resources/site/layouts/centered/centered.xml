@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <layout xmlns="urn:enonic:xp:model:1.0">
   <display-name>Centered</display-name>
-  <form/>
+  <form>
+  <option-set name="radioOptionSet">
+    <label>Single selection</label>
+    <expanded>false</expanded>
+    <help-text>Single selection radio option set</help-text>
+    <occurrences minimum="1" maximum="1"/>
+    <options minimum="1" maximum="1">
+      <option name="option_1">
+        <label>Option 1</label>
+        <default>true</default>
+        <help-text>Help text for Option 1</help-text>
+        <items>
+          <input name="name1" type="TextLine">
+            <label>Name1</label>
+            <help-text>Text input</help-text>
+            <occurrences minimum="0" maximum="1"/>
+          </input>
+        </items>
+      </option>
+      <option name="option_2">
+        <label>Option 2</label>
+        <help-text>Help text for Option 2</help-text>
+        <items>
+          <input name="name2" type="TextLine">
+            <label>Name2</label>
+            <help-text>Text input</help-text>
+            <occurrences minimum="0" maximum="1"/>
+          </input>
+        </items>
+      </option>
+    </options>
+  </option-set>
+  </form>
   <regions>
     <region name="center"/>
   </regions>
