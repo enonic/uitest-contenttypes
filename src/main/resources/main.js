@@ -24,7 +24,7 @@ function runInContext(callback) {
         log.info(`Error@: ${e.message}`   +  e);
     }
     log.info('Contenttypes@ -  runInContext@ '  + result!=null);
-    log.info('Contenttypes@ -  runInContext@ '  + result);
+    log.info('Contenttypes@ -  runInContext@ '  + result!=null);
     return result;
 }
 
@@ -41,18 +41,19 @@ function getProject() {
 
 function initializeProject() {
     let project = runInContext(getProject);
-    log.info('Checking of existing the Default project, initializeProject'  + project!=null);
+    log.info('########## Checking of existing Default project, initializeProject'  + project!=null);
     if (!project) {
         log.info('Project "' + projectData.id + '" not found. Creating...');
         project = runInContext(createProject);
+        log.info('Project @@@ "' + projectData + '" runInContext method is completed');
 
         if (project) {
-            log.info('Project "' + projectData.id + '" successfully created');
+            log.info('Project "' + projectData.id + '" ###### successfully created');
 
             log.info('Importing "' + projectData.id + '" data');
             runInContext(createContent);
         } else {
-            log.error('Project "' + projectData.id + '" failed to be created');
+            log.error('Project "' + projectData.id + '" failed to be created!!!!');
         }
     }
 }
@@ -68,7 +69,7 @@ function createContent() {
         includeNodeIds: true
     });
     log.info('-------------------');
-    log.info('Imported nodes:');
+    log.info('Content Types, ##########Test-Data############Imported nodes:');
     importNodes.addedNodes.forEach(element => log.info(element));
     log.info('-------------------');
     log.info('Updated nodes:');
