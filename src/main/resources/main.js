@@ -23,7 +23,8 @@ function runInContext(callback) {
     } catch (e) {
         log.info(`Error@: ${e.message}`   +  e);
     }
-
+    log.info('Contenttypes@ -  runInContext@ '  + result!=null);
+    log.info('Contenttypes@ -  runInContext@ '  + result);
     return result;
 }
 
