@@ -41,11 +41,12 @@ function getProject() {
 
 function initializeProject() {
     let project = runInContext(getProject);
+    log.info('$$$$$$ contenttypes@initializeProject');
     log.info('########## Checking of existing Default project, initializeProject'  + project!=null);
     if (!project) {
         log.info('Project "' + projectData.id + '" not found. Creating...');
         project = runInContext(createProject);
-        log.info('Project @@@ "' + projectData + '" runInContext method is completed');
+        log.info('Project @@@ "' + projectData.id + '" runInContext method is completed');
 
         if (project) {
             log.info('Project "' + projectData.id + '" ###### successfully created');
