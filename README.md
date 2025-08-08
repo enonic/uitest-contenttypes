@@ -4,6 +4,7 @@ To build the application:
 
 ```bash
 gradlew build
+gradlew deploy
 ```
 
 
