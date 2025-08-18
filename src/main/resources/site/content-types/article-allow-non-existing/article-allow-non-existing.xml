@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <content-type>
-  <display-name>article</display-name>
-  <description>Only one media type is allowed</description>
+  <display-name>article non existing</display-name>
+  <description>A non-existing content type is allowed</description>
   <content-display-name-script>$('title')</content-display-name-script>
-  <allow-child-content-type>media:image</allow-child-content-type>
+  <allow-child-content-type>acme</allow-child-content-type>
   <super-type>base:structured</super-type>
   <form>
     <input name="title" type="TextLine">

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <content-type>
-  <display-name>Article1</display-name>
+  <display-name>article wild card</display-name>
+  <description>All media types are allowed via wild card</description>
   <content-display-name-script>$('title')</content-display-name-script>
+  <allow-child-content-type>media:*</allow-child-content-type>
   <super-type>base:structured</super-type>
   <form>
     <input name="title" type="TextLine">
