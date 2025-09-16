@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<content-type>
+  <display-name>imageselector_site</display-name>
+  <super-type>base:structured</super-type>
+  <allow-child-content>true</allow-child-content>
+  <form>
+    <input name="imageselector_0_0_s" type="ImageSelector">
+      <label>Infinite</label>
+      <indexed>true</indexed>
+      <occurrences minimum="0" maximum="0"/>
+      <config>
+        <allowPath>${site}/*</allowPath>
+      </config>
+    </input>
+  </form>
+</content-type>

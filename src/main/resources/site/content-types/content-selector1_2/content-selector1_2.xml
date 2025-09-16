@@ -7,7 +7,6 @@
       <label>content selector 1:2</label>
       <occurrences minimum="1" maximum="2"/>
       <config>
-        <relationship>system:reference</relationship>
         <allowPath>*</allowPath>       
       </config>
     </input>
