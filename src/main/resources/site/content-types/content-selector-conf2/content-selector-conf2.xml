@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<content-type xmlns="urn:enonic:xp:model:1.0">
+  <display-name>content-sel-conf2</display-name>
+  <super-type>base:structured</super-type>
+  <form>
+
+    <input name="allowArticle123" type="ContentSelector">
+      <label>Allow all content items</label>
+      <occurrences minimum="2" maximum="8"/>
+      <config>
+        <allowContentType>article123</allowContentType>  
+    <allowPath>${site}/people/</allowPath>  
+
+      </config>
+    </input>
+
+  </form>
+</content-type>
