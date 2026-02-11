@@ -1,5 +1,5 @@
 # Application that contains content types for ui-testing for Content Studio
-XP version 8.0.0-SNAPSHOT 10.02.2026
+XP version 8.0.0-SNAPSHOT 11.02.2026
 To build the application:
 
 ```bash
