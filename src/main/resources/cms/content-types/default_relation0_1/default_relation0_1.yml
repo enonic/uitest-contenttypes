@@ -1,0 +1,14 @@
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+displayName: "default_relation0_1"
+form:
+- type: "ContentSelector"
+  name: "defRelation"
+  label: "A single DEFAULT relation 0:1"
+  occurrences:
+    min: 0
+    max: 1
+  attributes:
+    relationshipType: "system:reference"

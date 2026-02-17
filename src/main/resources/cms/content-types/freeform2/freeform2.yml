@@ -1,0 +1,8 @@
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+displayName: "freeform2"
+form:
+- type: "FormFragment"
+  name: "freeform2"

@@ -1,0 +1,263 @@
+displayName: "Freeform"
+form:
+- type: "ItemSet"
+  name: "freeform"
+  label: "Form config"
+  occurrences:
+    min: 1
+    max: 1
+  items:
+  - type: "CheckBox"
+    name: "reCaptcha"
+    label: "Use reCaptcha"
+    helpText: "Will display reCaptcha for this form"
+    occurrences:
+      min: 0
+      max: 1
+    default: "unchecked"
+  - type: "CheckBox"
+    name: "xhr"
+    label: "Use XHR"
+    helpText: "Use asynchronous form"
+    occurrences:
+      min: 0
+      max: 1
+    default: "checked"
+  - type: "OptionSet"
+    name: "action"
+    expanded: false
+    label: "Action"
+    occurrences:
+      min: 1
+      max: 1
+    options:
+    - name: "save"
+      label: "Save form data"
+      defaultOption: true
+    - name: "url"
+      label: "Submit to url"
+      defaultOption: false
+      items:
+      - type: "TextLine"
+        name: "url"
+        label: "Url"
+        occurrences:
+          min: 0
+          max: 1
+    - name: "content"
+      label: "Redirect to content"
+      defaultOption: false
+      items:
+      - type: "ContentSelector"
+        name: "content"
+        label: "Select content"
+        occurrences:
+          min: 0
+          max: 1
+    - name: "email"
+      label: "Send e-mail"
+      defaultOption: false
+      items:
+      - type: "CheckBox"
+        name: "receipt"
+        label: "Store receipt"
+        helpText: "Will store receipt of all send emails"
+        occurrences:
+          min: 0
+          max: 1
+        default: "checked"
+      - type: "TextLine"
+        name: "from"
+        label: "From e-mail"
+        helpText: "Include displayName with �Some Name <name@domain.org>� Make sure\
+          \ your smtp server can send from this\n                    address\n   \
+          \               "
+        occurrences:
+          min: 0
+          max: 1
+      - type: "TextLine"
+        name: "to"
+        label: "To e-mail"
+        occurrences:
+          min: 0
+          max: 1
+      - type: "TextLine"
+        name: "subject"
+        label: "Subject"
+        occurrences:
+          min: 0
+          max: 1
+      - type: "HtmlArea"
+        name: "body"
+        label: "Body"
+        helpText: "Use %[input name]% to use form input values in generated email"
+        occurrences:
+          min: 0
+          max: 1
+        exclude: "*"
+        include: "styleselect | alignleft aligncenter alignright alignjustify | bullist\
+          \ numlist outdent indent | charmap anchor |\n                      table\n\
+          \                    "
+    selected:
+      min: 1
+      max: 1
+  - type: "ComboBox"
+    name: "method"
+    label: "Method"
+    occurrences:
+      min: 1
+      max: 1
+    options:
+    - value: "get"
+      label: "Get"
+    - value: "post"
+      label: "Post"
+    default: "get"
+  - type: "FormFragment"
+    name: "freeform-common-attr"
+  - type: "ItemSet"
+    name: "customattributes"
+    label: "custom attribute"
+    occurrences:
+      min: 0
+      max: 0
+    items:
+    - type: "FormFragment"
+      name: "freeform-name-value"
+  - type: "ItemSet"
+    name: "fieldsets"
+    label: "Fieldset"
+    occurrences:
+      min: 1
+      max: 0
+    items:
+    - type: "TextLine"
+      name: "legend"
+      label: "legend"
+      occurrences:
+        min: 0
+        max: 1
+    - type: "TextLine"
+      name: "class"
+      label: "class"
+      occurrences:
+        min: 0
+        max: 1
+    - type: "ItemSet"
+      name: "inputs"
+      label: "Input"
+      occurrences:
+        min: 1
+        max: 0
+      items:
+      - type: "FormFragment"
+        name: "freeform-common-attr"
+      - type: "TextLine"
+        name: "label"
+        label: "label"
+        occurrences:
+          min: 0
+          max: 1
+      - type: "ItemSet"
+        name: "customattributes"
+        label: "custom attribute"
+        occurrences:
+          min: 0
+          max: 0
+        items:
+        - type: "FormFragment"
+          name: "freeform-name-value"
+      - type: "OptionSet"
+        name: "element"
+        expanded: false
+        label: "element type"
+        occurrences:
+          min: 1
+          max: 1
+        options:
+        - name: "input"
+          label: "Input"
+          defaultOption: true
+          items:
+          - type: "RadioButton"
+            name: "required"
+            label: "Required"
+            occurrences:
+              min: 0
+              max: 0
+            options:
+            - value: "false"
+              label: "false"
+            - value: "true"
+              label: "true"
+            default: "false"
+          - type: "TextLine"
+            name: "value"
+            label: "Value"
+            occurrences:
+              min: 0
+              max: 1
+          - type: "TextLine"
+            name: "placeholder"
+            label: "Placeholder"
+            occurrences:
+              min: 0
+              max: 1
+          - type: "FormFragment"
+            name: "freeform-input-types"
+        - name: "textarea"
+          label: "Textarea"
+          defaultOption: false
+          items:
+          - type: "RadioButton"
+            name: "required"
+            label: "Required"
+            occurrences:
+              min: 0
+              max: 0
+            options:
+            - value: "false"
+              label: "false"
+            - value: "true"
+              label: "true"
+            default: "false"
+          - type: "TextLine"
+            name: "placeholder"
+            label: "Placeholder"
+            occurrences:
+              min: 0
+              max: 1
+          - type: "TextLine"
+            name: "rows"
+            label: "Rows"
+            occurrences:
+              min: 0
+              max: 1
+          - type: "TextLine"
+            name: "cols"
+            label: "Cols"
+            occurrences:
+              min: 0
+              max: 1
+        - name: "button"
+          label: "Button"
+          defaultOption: false
+          items:
+          - type: "FormFragment"
+            name: "freeform-name-value"
+        - name: "select"
+          label: "Select"
+          defaultOption: false
+          items:
+          - type: "ItemSet"
+            name: "options"
+            label: "Options"
+            occurrences:
+              min: 1
+              max: 0
+            items:
+            - type: "FormFragment"
+              name: "freeform-name-value"
+        selected:
+          min: 1
+          max: 1

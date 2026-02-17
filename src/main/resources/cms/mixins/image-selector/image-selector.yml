@@ -1,0 +1,8 @@
+displayName: "X-data (image selector)"
+form:
+- type: "ImageSelector"
+  name: "imageselector_0_1"
+  label: "One not required"
+  occurrences:
+    min: 0
+    max: 1

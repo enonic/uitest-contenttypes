@@ -1,0 +1,5 @@
+displayName: "main region"
+description: "test region"
+form: []
+regions:
+- "main"

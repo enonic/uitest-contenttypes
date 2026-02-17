@@ -1,0 +1,12 @@
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+displayName: "textarea2_4"
+form:
+- type: "TextArea"
+  name: "textarea"
+  label: "Text Area"
+  occurrences:
+    min: 2
+    max: 4

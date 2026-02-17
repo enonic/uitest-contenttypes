@@ -1,0 +1,14 @@
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+displayName: "content-selector1_2"
+form:
+- type: "ContentSelector"
+  name: "cs1_2"
+  label: "content selector 1:2"
+  occurrences:
+    min: 1
+    max: 2
+  allowPath:
+  - "*"
