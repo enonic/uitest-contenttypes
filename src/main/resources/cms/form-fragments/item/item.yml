@@ -1,0 +1,105 @@
+displayName: "Item core properties"
+form:
+- type: "ContentSelector"
+  name: "itemCategory"
+  label: "Category"
+  occurrences:
+    min: 0
+    max: 1
+  attributes:
+    relationshipType: "system:reference"
+  allowContentType:
+  - "item-category"
+  allowPath:
+  - "${site}/categories/"
+- type: "TextLine"
+  name: "title"
+  label: "Title"
+  occurrences:
+    min: 1
+    max: 1
+- type: "TextArea"
+  name: "ingress"
+  label: "Ingress"
+  occurrences:
+    min: 1
+    max: 1
+- type: "TextLine"
+  name: "titleShort"
+  label: "List Title"
+  occurrences:
+    min: 0
+    max: 1
+- type: "TextArea"
+  name: "ingressShort"
+  label: "List Ingress"
+  occurrences:
+    min: 0
+    max: 1
+- type: "ImageSelector"
+  name: "titleImage"
+  label: "Image"
+  helpText: "imageSelector1,imageSelector1,imageSelector1"
+  occurrences:
+    min: 1
+    max: 1
+- type: "TextLine"
+  name: "imageCaption"
+  label: "Image caption"
+  helpText: "Image caption,Image caption,Image caption"
+  occurrences:
+    min: 0
+    max: 1
+- type: "ImageSelector"
+  name: "listImage"
+  label: "List Image"
+  helpText: "imageSelector,imageSelector,imageSelector"
+  occurrences:
+    min: 0
+    max: 1
+- type: "ContentSelector"
+  name: "author"
+  label: "Author"
+  occurrences:
+    min: 1
+    max: 0
+  attributes:
+    relationshipType: "system:reference"
+  allowContentType:
+  - "author"
+  allowPath:
+  - "${site}/authors/"
+- type: "HtmlArea"
+  name: "body"
+  label: "Body"
+  occurrences:
+    min: 1
+    max: 1
+- type: "Tag"
+  name: "tags"
+  label: "Tags"
+  helpText: "TAGS"
+  occurrences:
+    min: 0
+    max: 0
+- type: "ComboBox"
+  name: "itemStyle"
+  label: "Item style"
+  occurrences:
+    min: 1
+    max: 1
+  options:
+  - value: "item__light"
+    label: "Light"
+  - value: "item__dark"
+    label: "Darkula"
+  default: "item__light"
+- type: "ContentSelector"
+  name: "relatedContent"
+  label: "Related content"
+  helpText: "relatedContent"
+  occurrences:
+    min: 0
+    max: 0
+  attributes:
+    relationshipType: "system:reference"

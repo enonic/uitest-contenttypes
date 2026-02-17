@@ -1,0 +1,13 @@
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+displayName: "date0_0"
+form:
+- type: "Date"
+  name: "date"
+  label: "Date"
+  occurrences:
+    min: 0
+    max: 0
+  default: "2000-01-01"

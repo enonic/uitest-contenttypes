@@ -1,0 +1,15 @@
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+displayName: "double_max"
+form:
+- type: "Double"
+  name: "double"
+  label: "Double"
+  helpText: "Double value"
+  occurrences:
+    min: 1
+    max: 0
+  min: 0.0
+  max: 3.14159

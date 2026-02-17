@@ -1,0 +1,15 @@
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+displayName: "long_max"
+form:
+- type: "Long"
+  name: "long"
+  label: "Long"
+  helpText: "Required long input"
+  occurrences:
+    min: 1
+    max: 1
+  min: 1
+  max: 10

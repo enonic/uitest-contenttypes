@@ -1,0 +1,13 @@
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+displayName: "datetime0_0"
+form:
+- type: "DateTime"
+  name: "datetime"
+  label: "DateTime 0:0"
+  helpText: "help text"
+  occurrences:
+    min: 0
+    max: 0

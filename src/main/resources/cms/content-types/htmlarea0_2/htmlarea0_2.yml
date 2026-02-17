@@ -1,0 +1,12 @@
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+displayName: "htmlarea0_2"
+form:
+- type: "HtmlArea"
+  name: "htmlarea_0_2"
+  label: "HTML content 0:2"
+  occurrences:
+    min: 0
+    max: 2

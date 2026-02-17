@@ -1,0 +1,13 @@
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+displayName: "long0_1"
+form:
+- type: "Long"
+  name: "long"
+  label: "Long"
+  helpText: "..that's the question!"
+  occurrences:
+    min: 0
+    max: 1

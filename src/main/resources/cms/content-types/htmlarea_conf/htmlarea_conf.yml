@@ -1,0 +1,14 @@
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+displayName: "htmlarea_conf"
+form:
+- type: "HtmlArea"
+  name: "htmlarea_conf"
+  label: "HTML Area with customized toolbar"
+  occurrences:
+    min: 0
+    max: 2
+  exclude: "*"
+  include: "JustifyLeft JustifyRight | Bold Italic"

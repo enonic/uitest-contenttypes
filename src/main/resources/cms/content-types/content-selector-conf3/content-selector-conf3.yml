@@ -1,0 +1,14 @@
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+displayName: "content-sel-conf3"
+form:
+- type: "ContentSelector"
+  name: "allowArticle12345"
+  label: "Allow all content items"
+  occurrences:
+    min: 2
+    max: 8
+  allowContentType:
+  - "article123"

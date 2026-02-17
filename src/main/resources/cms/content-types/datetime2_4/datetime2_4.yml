@@ -1,0 +1,13 @@
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+displayName: "datetime2_4"
+form:
+- type: "Instant"
+  name: "requiredDatetime"
+  label: "DateTime 2:4 (with tz)"
+  helpText: "help text"
+  occurrences:
+    min: 2
+    max: 4

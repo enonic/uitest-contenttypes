@@ -1,0 +1,15 @@
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+displayName: "textline_conf"
+form:
+- type: "TextLine"
+  name: "socialSecurityNumber"
+  label: "SSN"
+  occurrences:
+    min: 1
+    max: 4
+  maxLength: 11
+  showCounter: true
+  default: "000-00-0000"

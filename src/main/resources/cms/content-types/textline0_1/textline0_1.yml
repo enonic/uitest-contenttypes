@@ -1,0 +1,13 @@
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+displayName: "textline0_1"
+form:
+- type: "TextLine"
+  name: "TextLine_0_1"
+  label: "Text Line 0:1"
+  helpText: "only one not required text input"
+  occurrences:
+    min: 0
+    max: 1

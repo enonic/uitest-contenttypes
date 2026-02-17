@@ -1,0 +1,20 @@
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: false
+displayName: "combobox0_0"
+description: "test:combobox0_0"
+form:
+- type: "ComboBox"
+  name: "combobox_min0_max0"
+  label: "combobox 0:0"
+  occurrences:
+    min: 0
+    max: 0
+  options:
+  - value: "o1"
+    label: "option A"
+  - value: "o2"
+    label: "option B"
+  - value: "o3"
+    label: "option C"
