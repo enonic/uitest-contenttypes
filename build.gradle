@@ -30,7 +30,7 @@ dependencies {
     include "com.enonic.xp:lib-value:${xpVersion}"
     include "com.enonic.xp:lib-project:${xpVersion}"
     include "com.enonic.xp:lib-export:${xpVersion}"
-    include 'com.enonic.lib:lib-thymeleaf:2.2.0-SNAPSHOT'
+    include 'com.enonic.lib:lib-thymeleaf:3.0.0-SNAPSHOT'
     include 'com.enonic.lib:lib-mustache:2.1.1'
 }
 
