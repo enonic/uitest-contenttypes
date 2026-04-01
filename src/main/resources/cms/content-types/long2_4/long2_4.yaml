@@ -1,0 +1,14 @@
+kind: "ContentType"
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+title: "long2_4"
+form:
+- type: "Long"
+  name: "long"
+  label: "Long"
+  helpText: "Required long input"
+  occurrences:
+    min: 2
+    max: 4

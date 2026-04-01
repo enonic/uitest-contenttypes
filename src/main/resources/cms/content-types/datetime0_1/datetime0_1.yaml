@@ -1,0 +1,14 @@
+kind: "ContentType"
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+title: "datetime0_1"
+form:
+- type: "DateTime"
+  name: "datetime"
+  label: "DateTime (no tz)"
+  helpText: "date Time"
+  occurrences:
+    min: 0
+    max: 1

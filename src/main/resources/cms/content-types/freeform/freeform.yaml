@@ -1,0 +1,9 @@
+kind: "ContentType"
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+title: "freeform"
+form:
+- type: "FormFragment"
+  name: "freeform"

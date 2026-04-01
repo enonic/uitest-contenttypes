@@ -1,0 +1,80 @@
+kind: "ContentType"
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+title: "optionset2"
+form:
+- type: "OptionSet"
+  name: "radioOptionSet"
+  expanded: false
+  label: "Single selection"
+  occurrences:
+    min: 1
+    max: 1
+  options:
+  - name: "ctbText"
+    label:
+      text: "Text block"
+      i18n: "ct.article.ctbText"
+    selected: false
+    items:
+    - type: "TextLine"
+      name: "content"
+      label: "Content"
+      occurrences:
+        min: 0
+        max: 1
+    - type: "OptionSet"
+      name: "ctbSettings"
+      expanded: false
+      label: "Settings for content block"
+      occurrences:
+        min: 1
+        max: 1
+      options:
+      - name: "fullWidth"
+        label: "Full width"
+        selected: false
+      - name: "sidebarImage"
+        label: "Sidebar image"
+        selected: false
+        items:
+        - type: "ImageSelector"
+          name: "image"
+          label: "Image"
+          occurrences:
+            min: 1
+            max: 1
+          allowPath:
+          - "${site}/*"
+        - type: "TextLine"
+          name: "caption"
+          label: "Caption"
+          occurrences:
+            min: 0
+            max: 1
+      selection:
+        min: 0
+        max: 10
+  - name: "ctbImages"
+    label: "Images"
+    selected: false
+    items:
+    - type: "OptionSet"
+      name: "ctbSettings"
+      expanded: false
+      label: "Settings for content block"
+      occurrences:
+        min: 1
+        max: 1
+      options:
+      - name: "fullWidth"
+        label: "Full width"
+        selected: false
+      selection:
+        min: 0
+        max: 10
+  selection:
+    min: 1
+    max: 1

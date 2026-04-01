@@ -1,0 +1,62 @@
+kind: "FormFragment"
+title: "Input types"
+form:
+- type: "OptionSet"
+  name: "type"
+  expanded: false
+  label: "input type"
+  occurrences:
+    min: 1
+    max: 1
+  options:
+  - name: "text"
+    label: "text"
+    defaultOption: false
+  - name: "submit"
+    label: "submit"
+    defaultOption: false
+  - name: "image"
+    label: "image"
+    defaultOption: false
+    items:
+    - type: "ImageSelector"
+      name: "src"
+      label: "src"
+      occurrences:
+        min: 0
+        max: 1
+    - type: "TextLine"
+      name: "scale"
+      label: "scale"
+      helpText: "See http://xp.readthedocs.io/en/stable/reference/image-processor/scaling.html"
+      occurrences:
+        min: 1
+        max: 1
+      default: "height(30)"
+  - name: "hidden"
+    label: "hidden"
+    defaultOption: false
+  - name: "number"
+    label: "number"
+    defaultOption: false
+  - name: "email"
+    label: "email"
+    defaultOption: false
+  - name: "date"
+    label: "date"
+    defaultOption: false
+  - name: "datetime"
+    label: "datetime"
+    defaultOption: false
+  - name: "datetime-local"
+    label: "datetime-local"
+    defaultOption: false
+  - name: "month"
+    label: "month"
+    defaultOption: false
+  - name: "color"
+    label: "color"
+    defaultOption: false
+  selected:
+    min: 1
+    max: 1

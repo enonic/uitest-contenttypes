@@ -1,0 +1,20 @@
+kind: "ContentType"
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+title: "attachment0_4"
+description: "test:attachment0_4"
+form:
+- type: "AttachmentUploader"
+  name: "attachment1"
+  label: "Single Attachment (required)"
+  occurrences:
+    min: 1
+    max: 1
+- type: "AttachmentUploader"
+  name: "attachment2"
+  label: "Multiple attachments (max 4)"
+  occurrences:
+    min: 0
+    max: 4

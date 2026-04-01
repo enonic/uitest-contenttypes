@@ -1,0 +1,73 @@
+kind: "ContentType"
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+title: "all-inputs"
+form:
+- type: "CheckBox"
+  name: "myCheckbox"
+  label: "Checkbox"
+  occurrences:
+    min: 0
+    max: 0
+- type: "ComboBox"
+  name: "myComboBox"
+  label: "ComboBox"
+  occurrences:
+    min: 0
+    max: 0
+  options:
+  - value: "option1"
+    label: "myOption 1"
+  - value: "option2"
+    label: "myOption 2"
+- type: "Double"
+  name: "double"
+  label: "Double"
+  occurrences:
+    min: 0
+    max: 0
+- type: "GeoPoint"
+  name: "myGeoPoint"
+  label: "GeoPoint"
+  occurrences:
+    min: 0
+    max: 0
+- type: "ImageSelector"
+  name: "myImageSelector"
+  label: "ImageSelector"
+  occurrences:
+    min: 0
+    max: 0
+- type: "Long"
+  name: "long"
+  label: "Long"
+  occurrences:
+    min: 0
+    max: 0
+- type: "ContentSelector"
+  name: "myRelationship"
+  label: "Relationship (like)"
+  occurrences:
+    min: 0
+    max: 0
+  attributes:
+    relationshipType: "system:reference"
+- type: "RadioButton"
+  name: "myRadioButtons"
+  label: "Radio Buttons"
+  occurrences:
+    min: 0
+    max: 0
+  options:
+  - value: "option1"
+    label: "myOption 1"
+  - value: "option2"
+    label: "myOption 2"
+- type: "TextLine"
+  name: "TextLine_0_1"
+  label: "TextLine"
+  occurrences:
+    min: 0
+    max: 1

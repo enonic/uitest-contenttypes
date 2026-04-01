@@ -1,0 +1,21 @@
+kind: "ContentType"
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+title: "combobox0_1"
+description: "test:combobox0_1"
+form:
+- type: "ComboBox"
+  name: "combobox_min0_max1"
+  label: "combobox 0:1"
+  occurrences:
+    min: 0
+    max: 1
+  options:
+  - value: "o1"
+    label: "option A"
+  - value: "o2"
+    label: "option B"
+  - value: "o3"
+    label: "option C"

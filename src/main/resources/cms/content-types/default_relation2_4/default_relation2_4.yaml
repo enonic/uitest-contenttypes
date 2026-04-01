@@ -1,0 +1,15 @@
+kind: "ContentType"
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+title: "default_relation2_4"
+form:
+- type: "ContentSelector"
+  name: "defRelation"
+  label: "A DEFAULT relation 2:4"
+  occurrences:
+    min: 2
+    max: 4
+  attributes:
+    relationshipType: "system:reference"

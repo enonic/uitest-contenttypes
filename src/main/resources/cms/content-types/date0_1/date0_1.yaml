@@ -1,0 +1,13 @@
+kind: "ContentType"
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+title: "date0_1"
+form:
+- type: "Date"
+  name: "date"
+  label: "Date"
+  occurrences:
+    min: 0
+    max: 1

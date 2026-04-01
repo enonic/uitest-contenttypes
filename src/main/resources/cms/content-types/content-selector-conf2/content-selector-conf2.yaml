@@ -1,0 +1,17 @@
+kind: "ContentType"
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+title: "content-sel-conf2"
+form:
+- type: "ContentSelector"
+  name: "allowArticle123"
+  label: "Allow all content items"
+  occurrences:
+    min: 2
+    max: 8
+  allowContentType:
+  - "article123"
+  allowPath:
+  - "${site}/people/"

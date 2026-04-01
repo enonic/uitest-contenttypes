@@ -1,0 +1,14 @@
+kind: "ContentType"
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+title: "textline1_0"
+form:
+- type: "TextLine"
+  name: "TextLine_1_0"
+  label: "Text Line 1:0"
+  helpText: "one or more required text inputs"
+  occurrences:
+    min: 1
+    max: 0

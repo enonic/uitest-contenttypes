@@ -1,0 +1,18 @@
+kind: "ContentType"
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+title: "content-selector2_8"
+form:
+- type: "ContentSelector"
+  name: "allowAll"
+  label: "Allow all content items"
+  occurrences:
+    min: 2
+    max: 8
+  attributes:
+    relationshipType: "system:reference"
+  allowPath:
+  - "*"
+  treeMode: true

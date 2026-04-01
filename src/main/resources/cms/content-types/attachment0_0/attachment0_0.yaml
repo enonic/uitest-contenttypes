@@ -1,0 +1,14 @@
+kind: "ContentType"
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+title: "attachment0_0"
+description: "attachment0_0"
+form:
+- type: "AttachmentUploader"
+  name: "attachment0_0"
+  label: "Multiple attachments ( not required)"
+  occurrences:
+    min: 0
+    max: 0

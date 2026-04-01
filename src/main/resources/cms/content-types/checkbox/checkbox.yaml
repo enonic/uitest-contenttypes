@@ -1,0 +1,15 @@
+kind: "ContentType"
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+title: "checkbox"
+description: "test:checkbox"
+form:
+- type: "CheckBox"
+  name: "checkbox0_1"
+  label: "To Check(Not required)"
+  helpText: "checkbox"
+  occurrences:
+    min: 0
+    max: 1

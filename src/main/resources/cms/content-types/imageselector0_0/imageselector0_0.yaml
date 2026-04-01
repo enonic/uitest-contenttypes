@@ -1,0 +1,13 @@
+kind: "ContentType"
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+title: "imageselector0_0"
+form:
+- type: "ImageSelector"
+  name: "imageselector_min0_max0"
+  label: "Infinite"
+  occurrences:
+    min: 0
+    max: 0

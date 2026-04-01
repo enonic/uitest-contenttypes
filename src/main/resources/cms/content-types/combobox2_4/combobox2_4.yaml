@@ -1,0 +1,27 @@
+kind: "ContentType"
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+title: "combobox2_4"
+description: "test:combobox2_4"
+form:
+- type: "ComboBox"
+  name: "combobox_min2_max4"
+  label: "combobox 2:4"
+  occurrences:
+    min: 2
+    max: 4
+  options:
+  - value: "o1"
+    label: "option A"
+  - value: "o2"
+    label: "option B"
+  - value: "o3"
+    label: "option C"
+  - value: "o4"
+    label: "option D"
+  - value: "o5"
+    label: "option E"
+allowChildContentType:
+- "base:folder"

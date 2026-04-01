@@ -1,0 +1,14 @@
+kind: "ContentType"
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+title: "double0_0"
+form:
+- type: "Double"
+  name: "double"
+  label: "Double"
+  helpText: "not required"
+  occurrences:
+    min: 0
+    max: 0

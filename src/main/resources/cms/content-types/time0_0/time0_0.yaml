@@ -1,0 +1,14 @@
+kind: "ContentType"
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+title: "time0_0"
+form:
+- type: "Time"
+  name: "time0_0"
+  label: "Time"
+  helpText: "..that's the question!"
+  occurrences:
+    min: 0
+    max: 0

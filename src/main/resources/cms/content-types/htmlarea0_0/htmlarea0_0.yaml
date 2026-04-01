@@ -1,0 +1,14 @@
+kind: "ContentType"
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+title: "htmlarea0_0"
+form:
+- type: "HtmlArea"
+  name: "htmlarea_0_0"
+  label: "HTML content 0:0"
+  helpText: "HTML Area"
+  occurrences:
+    min: 0
+    max: 0

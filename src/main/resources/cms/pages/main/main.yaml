@@ -1,0 +1,6 @@
+kind: "Page"
+title: "main region"
+description: "test region"
+form: []
+regions:
+- "main"

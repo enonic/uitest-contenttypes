@@ -1,0 +1,16 @@
+kind: "ContentType"
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+title: "custom-relationship2_4"
+description: "test:custom-relationship0_1"
+form:
+- type: "ContentSelector"
+  name: "cited-in"
+  label: "Cited In"
+  occurrences:
+    min: 2
+    max: 4
+  attributes:
+    relationshipType: "citation"

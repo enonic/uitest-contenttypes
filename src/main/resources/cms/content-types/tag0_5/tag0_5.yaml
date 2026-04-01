@@ -1,0 +1,16 @@
+kind: "ContentType"
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+title: "tag0_5"
+form:
+- type: "Tag"
+  name: "tag_max5"
+  label: "Tag 0:5"
+  helpText: "Some help text"
+  occurrences:
+    min: 0
+    max: 5
+  attributes:
+    allowPath: "${site}/mytags/"

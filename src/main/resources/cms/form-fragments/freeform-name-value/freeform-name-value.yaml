@@ -1,0 +1,15 @@
+kind: "FormFragment"
+title: "name / value"
+form:
+- type: "TextLine"
+  name: "name"
+  label: "Name"
+  occurrences:
+    min: 0
+    max: 1
+- type: "TextLine"
+  name: "value"
+  label: "Value"
+  occurrences:
+    min: 0
+    max: 1

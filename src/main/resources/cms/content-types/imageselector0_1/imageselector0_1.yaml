@@ -1,0 +1,13 @@
+kind: "ContentType"
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+title: "imageselector0_1"
+form:
+- type: "ImageSelector"
+  name: "imageselector_min0_max1"
+  label: "One not required"
+  occurrences:
+    min: 0
+    max: 1

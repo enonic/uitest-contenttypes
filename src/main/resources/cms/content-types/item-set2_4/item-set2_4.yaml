@@ -1,0 +1,26 @@
+kind: "ContentType"
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+title: "item-set2_4"
+form:
+- type: "ItemSet"
+  name: "myItemSet"
+  label: "ItemSet"
+  occurrences:
+    min: 2
+    max: 4
+  items:
+  - type: "TextLine"
+    name: "textLine"
+    label: "TextLine"
+    occurrences:
+      min: 1
+      max: 1
+  - type: "HtmlArea"
+    name: "myHtmlArea"
+    label: "HtmlArea"
+    occurrences:
+      min: 1
+      max: 1

@@ -1,9 +1,0 @@
-displayName: "Html Area x-data"
-form:
-- type: "HtmlArea"
-  name: "htmlarea_1_2"
-  label: "HTML content 1:2"
-  helpText: "html-area help text"
-  occurrences:
-    min: 1
-    max: 2

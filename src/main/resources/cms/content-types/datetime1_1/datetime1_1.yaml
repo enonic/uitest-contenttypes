@@ -1,0 +1,14 @@
+kind: "ContentType"
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+title: "datetime1_1"
+form:
+- type: "Instant"
+  name: "requiredDatetime"
+  label: "Required DateTime (with tz)"
+  helpText: "required DateTime"
+  occurrences:
+    min: 1
+    max: 1

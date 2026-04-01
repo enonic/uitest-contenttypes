@@ -1,0 +1,9 @@
+kind: "Mixin"
+title: "Text Area x-data"
+form:
+- type: "TextArea"
+  name: "textarea"
+  label: "Text Area"
+  occurrences:
+    min: 1
+    max: 1

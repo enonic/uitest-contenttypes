@@ -1,8 +1,0 @@
-superType: "base:structured"
-abstract: false
-final: false
-allowChildContent: true
-displayName: "freeform"
-form:
-- type: "FormFragment"
-  name: "freeform"

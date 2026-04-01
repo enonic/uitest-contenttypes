@@ -1,0 +1,15 @@
+kind: "ContentType"
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+title: "imageselector_site"
+form:
+- type: "ImageSelector"
+  name: "imageselector_0_0_s"
+  label: "Infinite"
+  occurrences:
+    min: 0
+    max: 0
+  allowPath:
+  - "${site}/*"

@@ -1,0 +1,17 @@
+kind: "Mixin"
+title: "Menu"
+form:
+- type: "CheckBox"
+  name: "menuItem"
+  label: "Menu item"
+  helpText: "Check this to include this Page in the menu"
+  occurrences:
+    min: 0
+    max: 1
+- type: "TextLine"
+  name: "menuName"
+  label: "Name in menu"
+  helpText: "Name to be used in menu. Optional"
+  occurrences:
+    min: 0
+    max: 1

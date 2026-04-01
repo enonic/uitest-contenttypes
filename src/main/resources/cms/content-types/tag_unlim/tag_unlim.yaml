@@ -1,0 +1,14 @@
+kind: "ContentType"
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+title: "tag_unlim"
+form:
+- type: "Tag"
+  name: "tag_unlimited"
+  label: "Unlimited"
+  helpText: "Some help text"
+  occurrences:
+    min: 0
+    max: 0

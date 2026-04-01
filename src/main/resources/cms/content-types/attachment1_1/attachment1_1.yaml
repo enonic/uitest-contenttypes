@@ -1,0 +1,14 @@
+kind: "ContentType"
+superType: "base:structured"
+abstract: false
+final: false
+allowChildContent: true
+title: "attachment1_1"
+description: "attachment1_1"
+form:
+- type: "AttachmentUploader"
+  name: "attachment1_1"
+  label: "Single Attachment (required)"
+  occurrences:
+    min: 1
+    max: 1
