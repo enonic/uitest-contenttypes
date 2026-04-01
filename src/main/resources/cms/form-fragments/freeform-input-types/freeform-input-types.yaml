@@ -11,13 +11,13 @@ form:
   options:
   - name: "text"
     label: "text"
-    defaultOption: false
+    selected: false
   - name: "submit"
     label: "submit"
-    defaultOption: false
+    selected: false
   - name: "image"
     label: "image"
-    defaultOption: false
+    selected: false
     items:
     - type: "ImageSelector"
       name: "src"
@@ -35,28 +35,28 @@ form:
       default: "height(30)"
   - name: "hidden"
     label: "hidden"
-    defaultOption: false
+    selected: false
   - name: "number"
     label: "number"
-    defaultOption: false
+    selected: false
   - name: "email"
     label: "email"
-    defaultOption: false
+    selected: false
   - name: "date"
     label: "date"
-    defaultOption: false
+    selected: false
   - name: "datetime"
     label: "datetime"
-    defaultOption: false
+    selected: false
   - name: "datetime-local"
     label: "datetime-local"
-    defaultOption: false
+    selected: false
   - name: "month"
     label: "month"
-    defaultOption: false
+    selected: false
   - name: "color"
     label: "color"
-    defaultOption: false
-  selected:
+    selected: false
+  selection:
     min: 1
     max: 1

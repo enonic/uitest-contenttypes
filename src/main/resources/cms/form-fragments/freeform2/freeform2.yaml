@@ -34,10 +34,10 @@ form:
     options:
     - name: "save"
       label: "Save form data"
-      defaultOption: true
+      selected: true
     - name: "url"
       label: "Submit to url"
-      defaultOption: false
+      selected: false
       items:
       - type: "TextLine"
         name: "url"
@@ -47,7 +47,7 @@ form:
           max: 1
     - name: "content"
       label: "Redirect to content"
-      defaultOption: false
+      selected: false
       items:
       - type: "ContentSelector"
         name: "content"
@@ -57,7 +57,7 @@ form:
           max: 1
     - name: "email"
       label: "Send e-mail"
-      defaultOption: false
+      selected: false
       items:
       - type: "CheckBox"
         name: "receipt"
@@ -99,7 +99,7 @@ form:
         include: "styleselect | alignleft aligncenter alignright alignjustify | bullist\
           \ numlist outdent indent | charmap anchor |\n                      table\n\
           \                    "
-    selected:
+    selection:
       min: 1
       max: 1
   - type: "ComboBox"
@@ -178,7 +178,7 @@ form:
         options:
         - name: "input"
           label: "Input"
-          defaultOption: true
+          selected: true
           items:
           - type: "RadioButton"
             name: "required"
@@ -208,7 +208,7 @@ form:
             name: "freeform-input-types"
         - name: "textarea"
           label: "Textarea"
-          defaultOption: false
+          selected: false
           items:
           - type: "RadioButton"
             name: "required"
@@ -242,13 +242,13 @@ form:
               max: 1
         - name: "button"
           label: "Button"
-          defaultOption: false
+          selected: false
           items:
           - type: "FormFragment"
             name: "freeform-name-value"
         - name: "select"
           label: "Select"
-          defaultOption: false
+          selected: false
           items:
           - type: "ItemSet"
             name: "options"
@@ -259,6 +259,6 @@ form:
             items:
             - type: "FormFragment"
               name: "freeform-name-value"
-        selected:
+        selection:
           min: 1
           max: 1

@@ -13,7 +13,7 @@ form:
   - name: "option_1"
     label: "Option 1"
     helpText: "Help text for Option 1"
-    defaultOption: true
+    selected: true
     items:
     - type: "TextLine"
       name: "name1"
@@ -25,7 +25,7 @@ form:
   - name: "option_2"
     label: "Option 2"
     helpText: "Help text for Option 2"
-    defaultOption: false
+    selected: false
     items:
     - type: "TextLine"
       name: "name2"
@@ -34,7 +34,7 @@ form:
       occurrences:
         min: 0
         max: 1
-  selected:
+  selection:
     min: 1
     max: 1
 regions:

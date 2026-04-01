@@ -73,7 +73,7 @@ form:
       options:
       - name: "input"
         label: "Input"
-        defaultOption: false
+        selected: false
         items:
         - type: "TextLine"
           name: "value"
@@ -115,7 +115,7 @@ form:
             max: 0
       - name: "button"
         label: "Button"
-        defaultOption: false
+        selected: false
         items:
         - type: "TextLine"
           name: "value"
@@ -125,7 +125,7 @@ form:
             max: 1
       - name: "select"
         label: "Select"
-        defaultOption: false
+        selected: false
         items:
         - type: "ItemSet"
           name: "options"
@@ -146,6 +146,6 @@ form:
             occurrences:
               min: 1
               max: 1
-      selected:
+      selection:
         min: 1
         max: 1
