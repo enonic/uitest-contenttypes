@@ -1,5 +1,5 @@
 kind: "CMS"
-mixin:
+mixins:
 - name: "com.enonic.uitest.contenttypes:text-area"
   allowContentTypes: "com.enonic.uitest.contenttypes:double0_0"
   optional: true
