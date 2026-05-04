@@ -1,27 +1,27 @@
 kind: "CMS"
 mixins:
-- name: "com.enonic.uitest.contenttypes:text-area"
+- name: "text-area"
   allowContentTypes: "com.enonic.uitest.contenttypes:double0_0"
   optional: true
-- name: "com.enonic.uitest.contenttypes:text-area"
+- name: "text-area"
   allowContentTypes: "com.enonic.uitest.contenttypes:double0_1"
   optional: true
-- name: "com.enonic.uitest.contenttypes:image-selector"
+- name: "image-selector"
   allowContentTypes: "com.enonic.uitest.contenttypes:double0_1"
   optional: true
-- name: "com.enonic.uitest.contenttypes:html-area"
+- name: "html-area"
   allowContentTypes: "com.enonic.uitest.contenttypes:double0_1"
   optional: true
-- name: "com.enonic.uitest.contenttypes:image-selector"
+- name: "image-selector"
   allowContentTypes: "com.enonic.uitest.contenttypes:double1_1"
   optional: true
-- name: "com.enonic.uitest.contenttypes:content-selector"
+- name: "content-selector"
   allowContentTypes: "com.enonic.uitest.contenttypes:combobox0_0"
   optional: true
-- name: "com.enonic.uitest.contenttypes:menu-item"
+- name: "menu-item"
   allowContentTypes: "com.enonic.uitest.contenttypes:article"
   optional: true
-- name: "com.enonic.uitest.contenttypes:html-area"
+- name: "html-area"
   allowContentTypes: "portal:site"
   optional: true
 form:

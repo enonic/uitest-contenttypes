@@ -66,7 +66,7 @@
             </property-set>
         </property-set>
         <property-set name="x">
-            <property-set name="com-enonic-xp-ui_testing-contenttypes">
+            <property-set name="com-enonic-uitest-contenttypes">
                 <property-set name="html-area"/>
             </property-set>
         </property-set>
@@ -92,7 +92,7 @@
                         <indexValueProcessor>htmlStripper</indexValueProcessor>
                     </indexValueProcessors>
                 </indexConfig>
-                <path>x.com-enonic-xp-ui_testing-contenttypes.html-area.htmlarea_1_2</path>
+                <path>x.com-enonic-uitest.contenttypes.html-area.htmlarea_1_2</path>
             </pathIndexConfig>
             <pathIndexConfig>
                 <indexConfig>
