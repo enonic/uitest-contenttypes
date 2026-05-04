@@ -1,10 +1,15 @@
 <node>
-    <id>7cf8ab51-6293-4f3e-9004-ba9e34165941</id>
+    <id>98085d3a-a5fa-4c74-85a5-db167143bc43</id>
     <childOrder>modifiedtime DESC</childOrder>
     <nodeType>content</nodeType>
-    <timestamp>2023-12-07T05:46:05.658Z</timestamp>
-    <inheritPermissions>true</inheritPermissions>
+    <timestamp>2026-05-04T10:16:40.396Z</timestamp>
     <permissions>
+        <principal key="role:system.everyone">
+            <allow type="array">
+                <value>READ</value>
+            </allow>
+            <deny type="array"/>
+        </principal>
         <principal key="role:system.admin">
             <allow type="array">
                 <value>READ</value>
@@ -29,7 +34,46 @@
             </allow>
             <deny type="array"/>
         </principal>
-        <principal key="role:cms.cm.app">
+        <principal key="role:cms.project.default.owner">
+            <allow type="array">
+                <value>READ</value>
+                <value>CREATE</value>
+                <value>MODIFY</value>
+                <value>DELETE</value>
+                <value>PUBLISH</value>
+                <value>READ_PERMISSIONS</value>
+                <value>WRITE_PERMISSIONS</value>
+            </allow>
+            <deny type="array"/>
+        </principal>
+        <principal key="role:cms.project.default.editor">
+            <allow type="array">
+                <value>READ</value>
+                <value>CREATE</value>
+                <value>MODIFY</value>
+                <value>DELETE</value>
+                <value>PUBLISH</value>
+                <value>READ_PERMISSIONS</value>
+                <value>WRITE_PERMISSIONS</value>
+            </allow>
+            <deny type="array"/>
+        </principal>
+        <principal key="role:cms.project.default.author">
+            <allow type="array">
+                <value>READ</value>
+                <value>CREATE</value>
+                <value>MODIFY</value>
+                <value>DELETE</value>
+            </allow>
+            <deny type="array"/>
+        </principal>
+        <principal key="role:cms.project.default.contributor">
+            <allow type="array">
+                <value>READ</value>
+            </allow>
+            <deny type="array"/>
+        </principal>
+        <principal key="role:cms.project.default.viewer">
             <allow type="array">
                 <value>READ</value>
             </allow>
@@ -41,18 +85,12 @@
         <string name="displayName">attachment1-1</string>
         <string name="type">com.enonic.uitest.contenttypes:attachment1_1</string>
         <string name="owner">user:system:su</string>
-        <dateTime name="modifiedTime">2023-12-07T05:46:05.658Z</dateTime>
+        <dateTime name="modifiedTime">2026-05-04T10:15:56.829Z</dateTime>
         <string name="modifier">user:system:su</string>
         <string name="creator">user:system:su</string>
-        <dateTime name="createdTime">2023-12-07T05:45:15.027Z</dateTime>
-        <property-set name="publish">
-            <dateTime isNull="true" name="first"/>
-            <dateTime isNull="true" name="from"/>
-            <dateTime isNull="true" name="to"/>
-        </property-set>
+        <dateTime name="createdTime">2026-05-04T10:15:18.286Z</dateTime>
         <property-set name="workflow">
             <string name="state">READY</string>
-            <property-set name="checks"/>
         </property-set>
         <property-set name="data">
             <string name="attachment1_1">book.jpg</string>
@@ -68,7 +106,6 @@
         </property-set>
     </data>
     <indexConfigs>
-        <analyzer>document_index_default</analyzer>
         <defaultConfig>
             <decideByType>true</decideByType>
             <enabled>true</enabled>
@@ -85,7 +122,7 @@
                     <fulltext>false</fulltext>
                     <includeInAllText>false</includeInAllText>
                 </indexConfig>
-                <path>data.siteConfig.applicationkey</path>
+                <path>data.siteconfig.applicationkey</path>
             </pathIndexConfig>
             <pathIndexConfig>
                 <indexConfig>
@@ -155,7 +192,7 @@
                     <fulltext>false</fulltext>
                     <includeInAllText>false</includeInAllText>
                 </indexConfig>
-                <path>modifiedTime</path>
+                <path>modifiedtime</path>
             </pathIndexConfig>
             <pathIndexConfig>
                 <indexConfig>
@@ -185,7 +222,7 @@
                     <fulltext>false</fulltext>
                     <includeInAllText>false</includeInAllText>
                 </indexConfig>
-                <path>createdTime</path>
+                <path>createdtime</path>
             </pathIndexConfig>
             <pathIndexConfig>
                 <indexConfig>
@@ -198,6 +235,10 @@
                 <path>attachment</path>
             </pathIndexConfig>
         </pathIndexConfigs>
-        <allTextIndexConfig/>
+        <allTextIndexConfig>
+            <enabled>true</enabled>
+            <nGram>true</nGram>
+            <fulltext>true</fulltext>
+        </allTextIndexConfig>
     </indexConfigs>
 </node>

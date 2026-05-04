@@ -1,10 +1,15 @@
 <node>
-    <id>6300d67e-4953-4806-83e4-726e3dea2c59</id>
+    <id>11274d4c-ddae-45ba-9fbb-a9a694e4ab35</id>
     <childOrder>modifiedtime DESC</childOrder>
     <nodeType>content</nodeType>
-    <timestamp>2023-12-07T05:46:08.199Z</timestamp>
-    <inheritPermissions>true</inheritPermissions>
+    <timestamp>2026-05-04T10:15:11.380Z</timestamp>
     <permissions>
+        <principal key="role:system.everyone">
+            <allow type="array">
+                <value>READ</value>
+            </allow>
+            <deny type="array"/>
+        </principal>
         <principal key="role:system.admin">
             <allow type="array">
                 <value>READ</value>
@@ -29,7 +34,46 @@
             </allow>
             <deny type="array"/>
         </principal>
-        <principal key="role:cms.cm.app">
+        <principal key="role:cms.project.default.owner">
+            <allow type="array">
+                <value>READ</value>
+                <value>CREATE</value>
+                <value>MODIFY</value>
+                <value>DELETE</value>
+                <value>PUBLISH</value>
+                <value>READ_PERMISSIONS</value>
+                <value>WRITE_PERMISSIONS</value>
+            </allow>
+            <deny type="array"/>
+        </principal>
+        <principal key="role:cms.project.default.editor">
+            <allow type="array">
+                <value>READ</value>
+                <value>CREATE</value>
+                <value>MODIFY</value>
+                <value>DELETE</value>
+                <value>PUBLISH</value>
+                <value>READ_PERMISSIONS</value>
+                <value>WRITE_PERMISSIONS</value>
+            </allow>
+            <deny type="array"/>
+        </principal>
+        <principal key="role:cms.project.default.author">
+            <allow type="array">
+                <value>READ</value>
+                <value>CREATE</value>
+                <value>MODIFY</value>
+                <value>DELETE</value>
+            </allow>
+            <deny type="array"/>
+        </principal>
+        <principal key="role:cms.project.default.contributor">
+            <allow type="array">
+                <value>READ</value>
+            </allow>
+            <deny type="array"/>
+        </principal>
+        <principal key="role:cms.project.default.viewer">
             <allow type="array">
                 <value>READ</value>
             </allow>
@@ -41,38 +85,22 @@
         <string name="displayName">site040269</string>
         <string name="type">portal:site</string>
         <string name="owner">user:system:su</string>
-        <dateTime name="modifiedTime">2023-12-07T05:46:08.198Z</dateTime>
+        <dateTime name="modifiedTime">2026-05-04T10:15:00.961Z</dateTime>
         <string name="modifier">user:system:su</string>
         <string name="creator">user:system:su</string>
-        <dateTime name="createdTime">2023-12-07T05:44:10.828Z</dateTime>
-        <property-set name="publish">
-            <dateTime isNull="true" name="first"/>
-            <dateTime isNull="true" name="from"/>
-            <dateTime isNull="true" name="to"/>
-        </property-set>
+        <dateTime name="createdTime">2026-05-04T10:14:44.237Z</dateTime>
         <property-set name="workflow">
             <string name="state">READY</string>
-            <property-set name="checks"/>
         </property-set>
         <property-set name="data">
             <string isNull="true" name="description"/>
             <property-set name="siteConfig">
                 <string name="applicationKey">com.enonic.uitest.contenttypes</string>
-                <property-set name="config">
-                    <string isNull="true" name="numPosts"/>
-                    <string isNull="true" name="footerText"/>
-                    <boolean name="noLogin">false</boolean>
-                </property-set>
-            </property-set>
-        </property-set>
-        <property-set name="x">
-            <property-set name="com-enonic-uitest-contenttypes">
-                <property-set name="html-area"/>
+                <property-set name="config"/>
             </property-set>
         </property-set>
     </data>
     <indexConfigs>
-        <analyzer>document_index_default</analyzer>
         <defaultConfig>
             <decideByType>true</decideByType>
             <enabled>true</enabled>
@@ -92,20 +120,7 @@
                         <indexValueProcessor>htmlStripper</indexValueProcessor>
                     </indexValueProcessors>
                 </indexConfig>
-                <path>x.com-enonic-uitest.contenttypes.html-area.htmlarea_1_2</path>
-            </pathIndexConfig>
-            <pathIndexConfig>
-                <indexConfig>
-                    <decideByType>false</decideByType>
-                    <enabled>true</enabled>
-                    <nGram>true</nGram>
-                    <fulltext>true</fulltext>
-                    <includeInAllText>true</includeInAllText>
-                    <indexValueProcessors>
-                        <indexValueProcessor>htmlStripper</indexValueProcessor>
-                    </indexValueProcessors>
-                </indexConfig>
-                <path>data.siteConfig.config.footerText</path>
+                <path>data.siteconfig.config.footertext</path>
             </pathIndexConfig>
             <pathIndexConfig>
                 <indexConfig>
@@ -115,7 +130,7 @@
                     <fulltext>false</fulltext>
                     <includeInAllText>false</includeInAllText>
                 </indexConfig>
-                <path>data.siteConfig.applicationkey</path>
+                <path>data.siteconfig.applicationkey</path>
             </pathIndexConfig>
             <pathIndexConfig>
                 <indexConfig>
@@ -185,7 +200,7 @@
                     <fulltext>false</fulltext>
                     <includeInAllText>false</includeInAllText>
                 </indexConfig>
-                <path>modifiedTime</path>
+                <path>modifiedtime</path>
             </pathIndexConfig>
             <pathIndexConfig>
                 <indexConfig>
@@ -215,7 +230,7 @@
                     <fulltext>false</fulltext>
                     <includeInAllText>false</includeInAllText>
                 </indexConfig>
-                <path>createdTime</path>
+                <path>createdtime</path>
             </pathIndexConfig>
             <pathIndexConfig>
                 <indexConfig>
@@ -228,6 +243,10 @@
                 <path>attachment</path>
             </pathIndexConfig>
         </pathIndexConfigs>
-        <allTextIndexConfig/>
+        <allTextIndexConfig>
+            <enabled>true</enabled>
+            <nGram>true</nGram>
+            <fulltext>true</fulltext>
+        </allTextIndexConfig>
     </indexConfigs>
 </node>
