@@ -1,0 +1,7 @@
+[versions]
+thymeleaf = "3.0.0-SNAPSHOT"
+mustache = "3.0.0-SNAPSHOT"
+
+[libraries]
+thymeleaf = { module = "com.enonic.lib:lib-thymeleaf", version.ref = "thymeleaf" }
+mustache = { module = "com.enonic.lib:lib-mustache", version.ref = "mustache" }
