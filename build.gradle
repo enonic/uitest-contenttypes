@@ -1,7 +1,7 @@
 plugins {
     id 'maven-publish'
     id 'com.enonic.defaults' version '2.1.6'
-    id 'com.enonic.xp.app' version '4.0.0-A1'
+    id 'com.enonic.xp.app'
 }
 
 repositories {
@@ -12,30 +12,23 @@ repositories {
 
 app {
     name = 'com.enonic.uitest.contenttypes'
-    displayName = 'All Content Types App'
-    systemVersion = "${xpVersion}"
 }
 
 dependencies {
-    compileOnly "com.enonic.xp:core-api:${xpVersion}"
-    compileOnly "com.enonic.xp:portal-api:${xpVersion}"
-    include "com.enonic.xp:lib-auth:${xpVersion}"
-    include "com.enonic.xp:lib-content:${xpVersion}"
-    include "com.enonic.xp:lib-context:${xpVersion}"
-    include "com.enonic.xp:lib-portal:${xpVersion}"
-    include "com.enonic.xp:lib-i18n:${xpVersion}"
-    include "com.enonic.xp:lib-io:${xpVersion}"
-    include "com.enonic.xp:lib-repo:${xpVersion}"
-    include "com.enonic.xp:lib-node:${xpVersion}"
-    include "com.enonic.xp:lib-value:${xpVersion}"
-    include "com.enonic.xp:lib-project:${xpVersion}"
-    include "com.enonic.xp:lib-export:${xpVersion}"
-    include 'com.enonic.lib:lib-thymeleaf:3.0.0-SNAPSHOT'
-    include 'com.enonic.lib:lib-mustache:2.1.1'
+    compileOnly xplibs.api.core
+    compileOnly xplibs.api.portal
+    include xplibs.auth
+    include xplibs.content
+    include xplibs.context
+    include xplibs.portal
+    include xplibs.i18n
+    include xplibs.io
+    include xplibs.repo
+    include xplibs.node
+    include xplibs.value
+    include xplibs.project
+    include xplibs.export
+    include libs.thymeleaf
+    include libs.mustache
 }
 
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(25)
-    }
-}
