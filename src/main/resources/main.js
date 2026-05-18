@@ -6,10 +6,8 @@ const mustache = require('/lib/mustache');
 const projectData = {
     id: 'default',
     displayName: 'Default',
-    description: 'Test data for ui-testing',   
-    readAccess: {
-        public: true
-    }
+    description: 'Test data for ui-testing',
+    publicRead: true
 }
 
 function runInContext(callback) {
