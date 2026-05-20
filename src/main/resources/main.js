@@ -19,7 +19,11 @@ function runInContext(callback) {
             branch: 'draft',
         }, callback);
     } catch (e) {
-        log.info(`Error@: ${e.message}`   +  e);
+        log.error(`Error in runInContext: ${e.message}`);
+        log.error(`Stack trace: ${e.stack}`);
+        if (e.cause) {
+            log.error(`Cause: ${e.cause}`);
+        }
     }
     log.info('Contenttypes@ -  runInContext@ '  + result!=null);
     log.info('Contenttypes@ -  runInContext@ '  + result!=null);
@@ -38,25 +42,32 @@ function getProject() {
 
 
 function initializeProject() {
-    let project = runInContext(getProject);
-    log.info('$$$$$$ contenttypes@initializeProject');
-    log.info('######### Checking of existing Default project, initializeProject'  + project!=null);
-    if (!project) {
-        log.info('Project "' + projectData.id + '" not found. Creating...');
-        project = runInContext(createProject);
-        log.info('Project @@@ "' + projectData.id + '" runInContext method is completed');
+    try {
+        let project = runInContext(getProject);
+        log.info('$$$$$$ contenttypes@initializeProject');
+        log.info('######### Checking of existing Default project, initializeProject'  + project!=null);
+        if (!project) {
+            log.info('Project "' + projectData.id + '" not found. Creating...');
+            project = runInContext(createProject);
+            log.info('Project @@@ "' + projectData.id + '" runInContext method is completed');
 
-        if (project) {
-            log.info('Project "' + projectData.id + '" ###### successfully created');
+            if (project) {
+                log.info('Project "' + projectData.id + '" ###### successfully created');
 
-            log.info('Importing "' + projectData.id + '" data');
-            runInContext(createContent);
-        } else {
-            log.error('Project "' + projectData.id + '" failed to be created!!!!');
+                log.info('Importing "' + projectData.id + '" data');
+                runInContext(createContent);
+            } else {
+                log.error('Project "' + projectData.id + '" failed to be created!!!!');
+            }
+        }
+    } catch (e) {
+        log.error(`Critical error in initializeProject: ${e.message}`);
+        log.error(`Stack trace: ${e.stack}`);
+        if (e.cause) {
+            log.error(`Cause: ${e.cause}`);
         }
     }
 }
-
 function createContent() {
     let importNodes = exportLib.importNodes({
         source: resolve('/import'),
