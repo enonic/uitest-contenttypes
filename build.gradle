@@ -29,6 +29,6 @@ dependencies {
     include xplibs.project
     include xplibs.export
     include libs.thymeleaf
-    include 'com.enonic.lib:lib-mustache:2.1.1'
+    include libs.mustache
 }
 
