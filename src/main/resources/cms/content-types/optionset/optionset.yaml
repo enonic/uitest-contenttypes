@@ -39,21 +39,6 @@ form:
         occurrences:
           min: 0
           max: 1
-      - type: "ContentSelector"
-        name: "myRelation"
-        label: "A single DEFAULT relation to another content"
-        occurrences:
-          min: 0
-          max: 1
-        attributes:
-          relationshipType: "system:reference"
-      - type: "DateTime"
-        name: "datetime"
-        label: "DateTime (no tz)"
-        helpText: "DateTime input"
-        occurrences:
-          min: 0
-          max: 1
       - type: "TextLine"
         name: "value"
         label: "Value"

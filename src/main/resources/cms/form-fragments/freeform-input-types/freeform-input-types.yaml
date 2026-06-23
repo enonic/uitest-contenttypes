@@ -45,18 +45,6 @@ form:
   - name: "date"
     label: "date"
     selected: false
-  - name: "datetime"
-    label: "datetime"
-    selected: false
-  - name: "datetime-local"
-    label: "datetime-local"
-    selected: false
-  - name: "month"
-    label: "month"
-    selected: false
-  - name: "color"
-    label: "color"
-    selected: false
   selection:
     min: 1
     max: 1
