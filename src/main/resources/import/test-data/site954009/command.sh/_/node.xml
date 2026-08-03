@@ -1,8 +1,8 @@
 <node>
-    <id>cb36bd58-d005-430f-8cf8-a8f553853b83</id>
+    <id>b76f220d-899d-4de3-afa1-f04a27e03f12</id>
     <childOrder>modifiedtime DESC</childOrder>
     <nodeType>content</nodeType>
-    <timestamp>2026-08-03T19:04:49.657Z</timestamp>
+    <timestamp>2026-08-03T19:07:35.295Z</timestamp>
     <permissions>
         <principal key="role:system.admin">
             <allow type="array">
@@ -82,30 +82,28 @@
     </permissions>
     <data>
         <boolean name="valid">true</boolean>
-        <string name="displayName">site954009</string>
-        <string name="type">portal:site</string>
-        <string name="owner">user:system:su</string>
-        <dateTime name="modifiedTime">2026-07-26T13:43:15.134Z</dateTime>
-        <string name="modifier">user:system:su</string>
+        <string name="displayName">command</string>
+        <string name="type">media:unknown</string>
+        <dateTime name="createdTime">2026-08-03T19:07:35.279Z</dateTime>
         <string name="creator">user:system:su</string>
-        <dateTime name="createdTime">2026-07-26T13:43:12.669Z</dateTime>
-        <property-set name="workflow">
-            <string name="state">IN_PROGRESS</string>
-        </property-set>
+        <string name="modifier">user:system:su</string>
+        <dateTime name="modifiedTime">2026-08-03T19:07:35.279Z</dateTime>
+        <string name="owner">user:system:su</string>
         <property-set name="data">
-            <string isNull="true" name="description"/>
-            <property-set name="siteConfig">
-                <string name="applicationKey">com.enonic.uitest.contenttypes</string>
-                <property-set name="config">
-                    <string isNull="true" name="numPosts"/>
-                    <string isNull="true" name="footerText"/>
-                    <boolean isNull="true" name="noLogin"/>
-                </property-set>
+            <property-set name="media">
+                <string name="attachment">command.sh</string>
             </property-set>
+        </property-set>
+        <property-set name="attachment">
+            <string name="name">command.sh</string>
+            <string name="label">source</string>
+            <binaryReference name="binary">command.sh</binaryReference>
+            <string name="mimeType">application/x-sh; charset=ISO-8859-1</string>
+            <long name="size">2499</long>
+            <string name="sha512">db94fe8704b6bcf96056db66939975482e94f19bac8693f5b2b8306d597e4c47f5e3db1b40b272e017dcc3ef14a684693c0910b8e0b97cfba8ca7ba0acbedb4b</string>
         </property-set>
     </data>
     <indexConfigs>
-        <analyzer>document_index_default</analyzer>
         <defaultConfig>
             <decideByType>true</decideByType>
             <enabled>true</enabled>
@@ -114,19 +112,6 @@
             <includeInAllText>false</includeInAllText>
         </defaultConfig>
         <pathIndexConfigs>
-            <pathIndexConfig>
-                <indexConfig>
-                    <decideByType>false</decideByType>
-                    <enabled>true</enabled>
-                    <nGram>true</nGram>
-                    <fulltext>true</fulltext>
-                    <includeInAllText>true</includeInAllText>
-                    <indexValueProcessors>
-                        <indexValueProcessor>htmlStripper</indexValueProcessor>
-                    </indexValueProcessors>
-                </indexConfig>
-                <path>data.siteconfig.config.footertext</path>
-            </pathIndexConfig>
             <pathIndexConfig>
                 <indexConfig>
                     <decideByType>false</decideByType>
