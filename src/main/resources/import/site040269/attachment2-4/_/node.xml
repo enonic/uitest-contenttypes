@@ -2,14 +2,8 @@
     <id>8e91a043-476b-4b43-b3bc-6b36b8574de0</id>
     <childOrder>modifiedtime DESC</childOrder>
     <nodeType>content</nodeType>
-    <timestamp>2026-05-04T10:16:40.194Z</timestamp>
+    <timestamp>2026-08-17T09:15:16.490Z</timestamp>
     <permissions>
-        <principal key="role:system.everyone">
-            <allow type="array">
-                <value>READ</value>
-            </allow>
-            <deny type="array"/>
-        </principal>
         <principal key="role:system.admin">
             <allow type="array">
                 <value>READ</value>
@@ -74,6 +68,12 @@
             <deny type="array"/>
         </principal>
         <principal key="role:cms.project.default.viewer">
+            <allow type="array">
+                <value>READ</value>
+            </allow>
+            <deny type="array"/>
+        </principal>
+        <principal key="role:system.everyone">
             <allow type="array">
                 <value>READ</value>
             </allow>

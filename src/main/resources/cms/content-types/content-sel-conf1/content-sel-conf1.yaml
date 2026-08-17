@@ -7,7 +7,7 @@ title: "content-sel-conf1"
 form:
 - type: "ContentSelector"
   name: "allowArticle"
-  label: "Allow all content items"
+  label: "Allow articles ${site}/articles*/"
   occurrences:
     min: 2
     max: 8
