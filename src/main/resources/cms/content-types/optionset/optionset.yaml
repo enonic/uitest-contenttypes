@@ -8,7 +8,7 @@ form:
 - type: "OptionSet"
   name: "radioOptionSet"
   expanded: false
-  label: "Single selection 1:1"
+  label: "Single selection"
   helpText: "Single selection radio option set"
   occurrences:
     min: 1
