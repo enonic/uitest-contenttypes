@@ -1,8 +1,8 @@
 <node>
-    <id>11274d4c-ddae-45ba-9fbb-a9a694e4ab35</id>
+    <id>31b89bdc-f43f-4093-9981-63ce3983cc61</id>
     <childOrder>modifiedtime DESC</childOrder>
     <nodeType>content</nodeType>
-    <timestamp>2026-08-17T09:15:15.678Z</timestamp>
+    <timestamp>2026-08-19T14:23:26.157Z</timestamp>
     <permissions>
         <principal key="role:system.admin">
             <allow type="array">
@@ -82,23 +82,14 @@
     </permissions>
     <data>
         <boolean name="valid">true</boolean>
-        <string name="displayName">site040269</string>
-        <string name="type">portal:site</string>
-        <string name="owner">user:system:su</string>
-        <dateTime name="modifiedTime">2026-05-04T10:15:00.961Z</dateTime>
-        <string name="modifier">user:system:su</string>
+        <string name="displayName">Templates</string>
+        <string name="type">portal:template-folder</string>
+        <dateTime name="createdTime">2026-08-19T14:23:00.673Z</dateTime>
         <string name="creator">user:system:su</string>
-        <dateTime name="createdTime">2026-05-04T10:14:44.237Z</dateTime>
-        <property-set name="workflow">
-            <string name="state">READY</string>
-        </property-set>
-        <property-set name="data">
-            <string isNull="true" name="description"/>
-            <property-set name="siteConfig">
-                <string name="applicationKey">com.enonic.uitest.contenttypes</string>
-                <property-set name="config"/>
-            </property-set>
-        </property-set>
+        <string name="modifier">user:system:su</string>
+        <dateTime name="modifiedTime">2026-08-19T14:23:00.673Z</dateTime>
+        <string name="owner">user:system:su</string>
+        <property-set name="data"/>
     </data>
     <indexConfigs>
         <defaultConfig>
@@ -109,19 +100,6 @@
             <includeInAllText>false</includeInAllText>
         </defaultConfig>
         <pathIndexConfigs>
-            <pathIndexConfig>
-                <indexConfig>
-                    <decideByType>false</decideByType>
-                    <enabled>true</enabled>
-                    <nGram>true</nGram>
-                    <fulltext>true</fulltext>
-                    <includeInAllText>true</includeInAllText>
-                    <indexValueProcessors>
-                        <indexValueProcessor>htmlStripper</indexValueProcessor>
-                    </indexValueProcessors>
-                </indexConfig>
-                <path>data.siteconfig.config.footertext</path>
-            </pathIndexConfig>
             <pathIndexConfig>
                 <indexConfig>
                     <decideByType>false</decideByType>
@@ -141,16 +119,6 @@
                     <includeInAllText>false</includeInAllText>
                 </indexConfig>
                 <path>x.*</path>
-            </pathIndexConfig>
-            <pathIndexConfig>
-                <indexConfig>
-                    <decideByType>false</decideByType>
-                    <enabled>true</enabled>
-                    <nGram>true</nGram>
-                    <fulltext>true</fulltext>
-                    <includeInAllText>false</includeInAllText>
-                </indexConfig>
-                <path>attachment.text</path>
             </pathIndexConfig>
             <pathIndexConfig>
                 <indexConfig>

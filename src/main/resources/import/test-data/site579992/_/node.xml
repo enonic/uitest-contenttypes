@@ -1,8 +1,8 @@
 <node>
-    <id>11274d4c-ddae-45ba-9fbb-a9a694e4ab35</id>
+    <id>02996d49-796e-488f-b601-32687526abb5</id>
     <childOrder>modifiedtime DESC</childOrder>
     <nodeType>content</nodeType>
-    <timestamp>2026-08-17T09:15:15.678Z</timestamp>
+    <timestamp>2026-08-19T14:23:26.140Z</timestamp>
     <permissions>
         <principal key="role:system.admin">
             <allow type="array">
@@ -82,21 +82,47 @@
     </permissions>
     <data>
         <boolean name="valid">true</boolean>
-        <string name="displayName">site040269</string>
+        <string name="displayName">site579992</string>
         <string name="type">portal:site</string>
         <string name="owner">user:system:su</string>
-        <dateTime name="modifiedTime">2026-05-04T10:15:00.961Z</dateTime>
+        <dateTime name="modifiedTime">2026-08-19T14:23:08.623Z</dateTime>
         <string name="modifier">user:system:su</string>
         <string name="creator">user:system:su</string>
-        <dateTime name="createdTime">2026-05-04T10:14:44.237Z</dateTime>
+        <dateTime name="createdTime">2026-08-19T14:23:00.339Z</dateTime>
         <property-set name="workflow">
-            <string name="state">READY</string>
+            <string name="state">IN_PROGRESS</string>
         </property-set>
         <property-set name="data">
             <string isNull="true" name="description"/>
             <property-set name="siteConfig">
                 <string name="applicationKey">com.enonic.uitest.contenttypes</string>
-                <property-set name="config"/>
+                <property-set name="config">
+                    <string isNull="true" name="numPosts"/>
+                    <string isNull="true" name="footerText"/>
+                    <boolean isNull="true" name="noLogin"/>
+                </property-set>
+            </property-set>
+            <property-set name="siteConfig">
+                <string name="applicationKey">com.enonic.uitest.myfirstapp</string>
+                <property-set name="config">
+                    <property-set name="checkOptionSet">
+                        <property-set name="option_2"/>
+                        <string name="_selected">option_2</string>
+                    </property-set>
+                </property-set>
+            </property-set>
+        </property-set>
+        <property-set name="components">
+            <string name="type">page</string>
+            <string name="path">/</string>
+            <property-set name="page">
+                <string name="descriptor">com.enonic.uitest.contenttypes:main</string>
+                <boolean name="customized">false</boolean>
+                <property-set name="config">
+                    <property-set name="com-enonic-uitest-contenttypes">
+                        <property-set name="main"/>
+                    </property-set>
+                </property-set>
             </property-set>
         </property-set>
     </data>
@@ -134,6 +160,89 @@
             </pathIndexConfig>
             <pathIndexConfig>
                 <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>true</nGram>
+                    <fulltext>true</fulltext>
+                    <includeInAllText>true</includeInAllText>
+                    <indexValueProcessors>
+                        <indexValueProcessor>htmlStripper</indexValueProcessor>
+                    </indexValueProcessors>
+                </indexConfig>
+                <path>components.text.value</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>components.part.descriptor</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>components.page.template</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>components.page.descriptor</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>components.page.customized</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>components.layout.descriptor</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>components.image.id</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>components.fragment.id</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
                     <decideByType>true</decideByType>
                     <enabled>true</enabled>
                     <nGram>false</nGram>
@@ -141,16 +250,6 @@
                     <includeInAllText>false</includeInAllText>
                 </indexConfig>
                 <path>x.*</path>
-            </pathIndexConfig>
-            <pathIndexConfig>
-                <indexConfig>
-                    <decideByType>false</decideByType>
-                    <enabled>true</enabled>
-                    <nGram>true</nGram>
-                    <fulltext>true</fulltext>
-                    <includeInAllText>false</includeInAllText>
-                </indexConfig>
-                <path>attachment.text</path>
             </pathIndexConfig>
             <pathIndexConfig>
                 <indexConfig>
@@ -231,6 +330,16 @@
                     <includeInAllText>false</includeInAllText>
                 </indexConfig>
                 <path>createdtime</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>false</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>components</path>
             </pathIndexConfig>
             <pathIndexConfig>
                 <indexConfig>
