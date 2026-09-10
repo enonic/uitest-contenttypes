@@ -1,8 +1,8 @@
 <node>
-    <id>02996d49-796e-488f-b601-32687526abb5</id>
+    <id>c1dbdd30-ed4a-41fa-a241-1237c8be626a</id>
     <childOrder>modifiedtime DESC</childOrder>
     <nodeType>content</nodeType>
-    <timestamp>2026-09-10T10:56:03.181Z</timestamp>
+    <timestamp>2026-09-10T10:57:40.804Z</timestamp>
     <permissions>
         <principal key="role:system.admin">
             <allow type="array">
@@ -82,35 +82,19 @@
     </permissions>
     <data>
         <boolean name="valid">true</boolean>
-        <string name="displayName">site579992</string>
-        <string name="type">portal:site</string>
+        <string name="displayName">article-customized</string>
+        <string name="type">portal:page-template</string>
         <string name="owner">user:system:su</string>
-        <dateTime name="modifiedTime">2026-08-19T14:23:08.623Z</dateTime>
+        <dateTime name="modifiedTime">2026-09-10T10:57:40.804Z</dateTime>
         <string name="modifier">user:system:su</string>
         <string name="creator">user:system:su</string>
-        <dateTime name="createdTime">2026-08-19T14:23:00.339Z</dateTime>
+        <dateTime name="createdTime">2026-09-10T10:56:45.461Z</dateTime>
         <property-set name="workflow">
             <string name="state">IN_PROGRESS</string>
         </property-set>
         <property-set name="data">
-            <string isNull="true" name="description"/>
-            <property-set name="siteConfig">
-                <string name="applicationKey">com.enonic.uitest.contenttypes</string>
-                <property-set name="config">
-                    <string isNull="true" name="numPosts"/>
-                    <string isNull="true" name="footerText"/>
-                    <boolean isNull="true" name="noLogin"/>
-                </property-set>
-            </property-set>
-            <property-set name="siteConfig">
-                <string name="applicationKey">com.enonic.uitest.myfirstapp</string>
-                <property-set name="config">
-                    <property-set name="checkOptionSet">
-                        <property-set name="option_2"/>
-                        <string name="_selected">option_2</string>
-                    </property-set>
-                </property-set>
-            </property-set>
+            <string name="supports">com.enonic.uitest.contenttypes:article</string>
+            <string name="supports">com.enonic.uitest.contenttypes:article-non-media</string>
         </property-set>
         <property-set name="components">
             <string name="type">page</string>
@@ -125,6 +109,20 @@
                 </property-set>
             </property-set>
         </property-set>
+        <property-set name="components">
+            <string name="type">text</string>
+            <string name="path">/main/0</string>
+            <property-set name="text">
+                <string name="value">&lt;pre&gt;
+Customize test&lt;/pre&gt;
+
+&lt;figure class="captioned editor-align-justify"&gt;&lt;img alt="" src="image://a355ef51-996c-4018-8aca-be015613d165" style="width:100%" /&gt;&lt;/figure&gt;
+
+&lt;p&gt; &lt;/p&gt;
+</string>
+            </property-set>
+        </property-set>
+        <reference name="processedReferences">a355ef51-996c-4018-8aca-be015613d165</reference>
     </data>
     <indexConfigs>
         <defaultConfig>
@@ -135,19 +133,6 @@
             <includeInAllText>false</includeInAllText>
         </defaultConfig>
         <pathIndexConfigs>
-            <pathIndexConfig>
-                <indexConfig>
-                    <decideByType>false</decideByType>
-                    <enabled>true</enabled>
-                    <nGram>true</nGram>
-                    <fulltext>true</fulltext>
-                    <includeInAllText>true</includeInAllText>
-                    <indexValueProcessors>
-                        <indexValueProcessor>htmlStripper</indexValueProcessor>
-                    </indexValueProcessors>
-                </indexConfig>
-                <path>data.siteconfig.config.footertext</path>
-            </pathIndexConfig>
             <pathIndexConfig>
                 <indexConfig>
                     <decideByType>false</decideByType>

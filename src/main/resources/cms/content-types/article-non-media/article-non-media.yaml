@@ -29,3 +29,5 @@ form:
     max: 1
 allowChildContentType:
 - "article-non-media"
+config:
+  customizeOnCreate: true
