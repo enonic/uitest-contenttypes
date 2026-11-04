@@ -12,4 +12,5 @@ form:
     min: 2
     max: 8
   allowContentType:
-  - "article123"
+    - "article"
+    - "base:folder"
